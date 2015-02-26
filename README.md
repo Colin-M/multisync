@@ -40,11 +40,11 @@ grunt.initConfig({
             src:    '<%= multisync.options.drives.MyHardDrive %>',
             dest:   '<%= multisync.options.drives.MyBackupDrive %>'
         },
-        folders: {
+        folders: [
             {src: '/TestFolder/', dest: '/test-folder', recursive: false},
             {src: '/TestFolder2/', dest: '/TestFolder2'},
             {src: '/NamesDontHave/', dest: '/_to_be__the_same_'},
-        },
+        ],
         options: {
             // any rsyncwrapper options here get allpied to ALL folder pairs
             recursive: true,
